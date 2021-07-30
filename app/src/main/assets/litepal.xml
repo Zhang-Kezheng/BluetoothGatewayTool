@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<litepal>
+    <dbname value="BluetoothGatewayTool"/>
+    <version value="3"/>
+    <list>
+        <mapping class="com.example.bluetoothgatewaytool.model.Scene"/>
+        <mapping class="com.example.bluetoothgatewaytool.model.User"/>
+        <mapping class="com.example.bluetoothgatewaytool.model.Setting"/>
+    </list>
+</litepal>

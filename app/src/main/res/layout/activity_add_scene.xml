@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".activty.AddSceneActivity" >
+    <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp" android:src="@mipmap/back" android:id="@+id/password_back"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="10dp" android:layout_marginTop="30dp"/>
+    <TextView
+            android:layout_width="72dp"
+            android:layout_height="25dp"
+            android:text="参数配置"
+            android:textColor="#ff4a4a4a"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" android:layout_marginTop="38dp" android:id="@+id/textView"/>
+    <LinearLayout android:layout_width="335dp" android:layout_height="wrap_content"
+                  android:orientation="vertical"
+                  android:gravity="center_horizontal"
+                  app:layout_constraintTop_toBottomOf="@+id/textView" android:layout_marginTop="48dp"
+                  app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent">
+        <LinearLayout android:layout_width="335dp" android:layout_height="40dp"
+                      android:gravity="center_vertical"
+                      android:orientation="horizontal">
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_marginStart="20dp"
+                    android:text="楼层编号"
+                    android:textColor="#ff4a4a4a"
+                    android:textSize="14sp"/>
+            <EditText android:layout_width="0dp" android:layout_height="40dp"
+                      android:layout_weight="1"
+                      android:background="@null"
+                      android:gravity="end|center"
+                      android:layout_marginEnd="20dp"
+                      android:inputType="number" android:id="@+id/floor_number"/>
+        </LinearLayout>
+        <LinearLayout android:layout_width="295dp"
+                      android:layout_height="2dp"
+                      android:background="@drawable/main_line">
+        </LinearLayout>
+        <LinearLayout android:layout_width="335dp" android:layout_height="40dp"
+                      android:gravity="center_vertical"
+                      android:orientation="horizontal">
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_marginStart="20dp"
+                    android:text="区域名称"
+                    android:textColor="#ff4a4a4a"
+                    android:textSize="14sp"/>
+            <EditText android:layout_width="0dp" android:layout_height="40dp"
+                      android:layout_weight="1"
+                      android:background="@null"
+                      android:gravity="end|center"
+                      android:layout_marginEnd="20dp"
+                      android:inputType="text" android:id="@+id/area_name"/>
+        </LinearLayout>
+        <LinearLayout android:layout_width="295dp"
+                      android:layout_height="2dp"
+                      android:background="@drawable/main_line">
+        </LinearLayout>
+        <LinearLayout android:layout_width="335dp" android:layout_height="40dp"
+                      android:gravity="center_vertical"
+                      android:orientation="horizontal">
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_marginStart="20dp"
+                    android:text="区域编号"
+                    android:textColor="#ff4a4a4a"
+                    android:textSize="14sp"/>
+            <EditText android:layout_width="0dp" android:layout_height="40dp"
+                      android:layout_weight="1"
+                      android:background="@null"
+                      android:gravity="end|center"
+                      android:layout_marginEnd="20dp"
+                      android:inputType="number" android:id="@+id/area_number"/>
+        </LinearLayout>
+        <LinearLayout android:layout_width="295dp"
+                      android:layout_height="2dp"
+                      android:background="@drawable/main_line">
+        </LinearLayout>
+        <LinearLayout android:layout_width="335dp" android:layout_height="40dp"
+                      android:gravity="center_vertical"
+                      android:orientation="horizontal">
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_marginStart="20dp"
+                    android:text="x"
+                    android:textColor="#ff4a4a4a"
+                    android:textSize="14sp"/>
+            <EditText android:layout_width="0dp" android:layout_height="40dp"
+                      android:layout_weight="1"
+                      android:background="@null"
+                      android:layout_marginEnd="20dp"
+                      android:gravity="end|center"
+                      android:inputType="number" android:id="@+id/x" android:digits="123456789."/>
+        </LinearLayout>
+        <LinearLayout android:layout_width="295dp"
+                      android:layout_height="2dp"
+                      android:background="@drawable/main_line">
+        </LinearLayout>
+        <LinearLayout android:layout_width="335dp" android:layout_height="40dp"
+                      android:gravity="center_vertical"
+                      android:orientation="horizontal">
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_marginStart="20dp"
+                    android:text="y"
+                    android:textColor="#ff4a4a4a"
+                    android:textSize="14sp"/>
+            <EditText android:layout_width="0dp" android:layout_height="40dp"
+                      android:layout_weight="1"
+                      android:background="@null"
+                      android:gravity="end|center"
+                      android:layout_marginEnd="20dp"
+                      android:inputType="number" android:id="@+id/y" android:digits="123456789."/>
+        </LinearLayout>
+        <LinearLayout android:layout_width="295dp"
+                      android:layout_height="2dp"
+                      android:background="@drawable/main_line">
+        </LinearLayout>
+        <LinearLayout android:layout_width="335dp" android:layout_height="40dp"
+                      android:gravity="center_vertical"
+                      android:orientation="horizontal">
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_marginStart="20dp"
+                    android:text="z"
+                    android:textColor="#ff4a4a4a"
+                    android:textSize="14sp"/>
+            <EditText android:layout_width="0dp" android:layout_height="40dp"
+                      android:layout_weight="1"
+                      android:background="@null"
+                      android:layout_marginEnd="20dp"
+                      android:gravity="end|center"
+                      android:inputType="number" android:id="@+id/z" android:digits="123456789."/>
+        </LinearLayout>
+        <LinearLayout android:layout_width="295dp"
+                      android:layout_height="2dp"
+                      android:background="@drawable/main_line">
+        </LinearLayout>
+    </LinearLayout>
+    <Button
+            android:text="保 存"
+            android:layout_width="335dp"
+            android:layout_height="56dp" android:id="@+id/password_save"
+            android:background="@drawable/main_button"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="26dp"
+            app:layout_constraintBottom_toBottomOf="parent" android:layout_marginBottom="10dp"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

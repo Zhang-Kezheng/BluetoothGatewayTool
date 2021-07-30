@@ -1,0 +1,33 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="@android:style/Theme.NoTitleBar.Fullscreen">
+        <!-- Customize your theme here. -->
+        <item name="windowNoTitle">true</item>
+        <item name="colorPrimary">#CBCACC</item>
+        <item name="colorPrimaryDark">#FFFFFF</item>
+    </style>
+    <style name="TranslucentTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowTranslucentStatus">false</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+        <!--Android 5.x开始需要把颜色设置透明，否则导航栏会呈现系统默认的浅灰色-->
+        <item name="android:statusBarColor">@android:color/transparent</item>
+    </style>
+    <style name="Dialog" parent="android:style/Theme.Dialog">
+        <item name="android:background">@drawable/dialog_bg</item>
+        <item name="android:windowBackground">@drawable/dialog_bg</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:width">136dp</item>
+        <item name="height">136dp</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+    <style name="fix_ip_dialog" parent="android:style/Theme.Dialog">
+        <item name="android:background">@drawable/fix_ip_dialog</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@drawable/fix_ip_dialog</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:width">136dp</item>
+        <item name="height">136dp</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+</resources>
